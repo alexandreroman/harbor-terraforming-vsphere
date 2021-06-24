@@ -50,7 +50,7 @@ chmod +x /home/ubuntu/docker-compose && \
 sudo mv /home/ubuntu/docker-compose /usr/local/bin
 
 # Download and extract Harbor installer.
-export HARBOR_VERSION=2.2.1
+export HARBOR_VERSION=2.3.0
 curl -L https://github.com/goharbor/harbor/releases/download/v${HARBOR_VERSION}/harbor-online-installer-v${HARBOR_VERSION}.tgz -o /home/ubuntu/harbor-online-installer.tgz && \
 cd /home/ubuntu && tar zxvf harbor-online-installer.tgz
 
