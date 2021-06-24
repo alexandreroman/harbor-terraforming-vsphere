@@ -3,7 +3,7 @@
 . /home/ubuntu/.env
 
 # Set up HTTP proxy support
-if ! [ -z "HTTP_PROXY_HOST" ]; then
+if ! [ -z "$HTTP_PROXY_HOST" ]; then
   export http_proxy=http://${HTTP_PROXY_HOST}:${HTTP_PROXY_PORT}
   export https_proxy=http://${HTTP_PROXY_HOST}:${HTTP_PROXY_PORT}
   export NO_PROXY=localhost,127.0.0.1,.local
@@ -84,7 +84,7 @@ chart:
   absolute_url: https://charts.${HARBOR_HOSTNAME}
 EOF
 
-if ! [ -z "HTTP_PROXY_HOST" ]; then
+if ! [ -z "$HTTP_PROXY_HOST" ]; then
   cat <<EOF >> /home/ubuntu/harbor/harbor.yml
 
 proxy:
