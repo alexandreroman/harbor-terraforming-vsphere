@@ -1,7 +1,7 @@
 terraform {
   required_providers {
-    vsphere = "~> 1.16"
-    local = "~> 1.4"
+    vsphere = "~> 2.0.1"
+    local = "~> 2.1.0"
   }
 }
 
